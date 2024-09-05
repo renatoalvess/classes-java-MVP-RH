@@ -17,7 +17,7 @@ public class Funcionarios {
     private Date dataRecisao;
     private int numeroDependentes;
 
-    // Construtor
+    // Construtor!
     public Funcionarios(String cpf, String nome, int idCargo, int idDepartamento, String contaBancaria,
                         Date dataNascimento, String sexo, String municipio, String endereco,
                         String telefone, String email, Date dataAdmissao, Date dataRecisao, int numeroDependentes) {
