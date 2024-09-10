@@ -3,7 +3,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public final class folhaPagamento {
+public class folhaPagamento {
+
+    public static List<folhaPagamento> getFolhaPagamentos() {
+        return folhaPagamentos;
+    }
+
+    public static void setFolhaPagamentos(List<folhaPagamento> folhaPagamentos) {
+        folhaPagamento.folhaPagamentos = folhaPagamentos;
+    }
     private int idPagamento;
     private int idFuncionario;
     private LocalDate dataPagamento;
@@ -12,7 +20,7 @@ public final class folhaPagamento {
 
     // Construtor da classe com validações
     public folhaPagamento(int idPagamento, int idFuncionario, LocalDate dataPagamento, double totalPagamento, String statusPagamento) {
-        setIdPagamento(idPagamento); // Aplicando validação via setters
+        setIdPagamento(idPagamento); 
         setIdFuncionario(idFuncionario);
         this.dataPagamento = dataPagamento;
         this.totalPagamento = totalPagamento;
@@ -24,7 +32,7 @@ public final class folhaPagamento {
         return idPagamento;
     }
 
-    public void setIdPagamento(int idPagamento) {
+    private void setIdPagamento(int idPagamento) {
         if (idPagamento > 0) {
             this.idPagamento = idPagamento;
         } else {
@@ -36,7 +44,7 @@ public final class folhaPagamento {
         return idFuncionario;
     }
 
-    public void setIdFuncionario(int idFuncionario) {
+    private void setIdFuncionario(int idFuncionario) {
         if (idFuncionario > 0) {
             this.idFuncionario = idFuncionario;
         } else {
@@ -64,7 +72,7 @@ public final class folhaPagamento {
         return statusPagamento;
     }
 
-    public void setStatusPagamento(String statusPagamento) {
+    private void setStatusPagamento(String statusPagamento) {
         if (statusPagamento.equals("Não Pago") || 
             statusPagamento.equals("Em Processo") || 
             statusPagamento.equals("Pago")) {
@@ -83,16 +91,16 @@ public final class folhaPagamento {
         System.out.println("Status do Pagamento: " + statusPagamento);
     }
 
-    // Simulando um "banco de dados" com uma lista
+    // Simulando um banco de dados com lista
     private static List<folhaPagamento> folhaPagamentos = new ArrayList<>();
 
-    // Método CREATE: adicionar uma nova folha de pagamento
+    // Método CREATE: adiciona uma nova folha de pagamento
     public static void criarFolha(folhaPagamento folha) {
         folhaPagamentos.add(folha);
         System.out.println("Folha de pagamento adicionada com sucesso!");
     }
 
-    // Método READ: buscar folha de pagamento pelo ID
+    // Método READ: busca uma folha de pagamento pelo ID
     public static void lerFolha(int idPagamento) {
         Optional<folhaPagamento> folha = folhaPagamentos.stream()
             .filter(f -> f.getIdPagamento() == idPagamento)
@@ -105,7 +113,7 @@ public final class folhaPagamento {
         }
     }
 
-    // Método UPDATE: atualizar uma folha de pagamento existente
+    // Método UPDATE: atualiza uma folha de pagamento existente
     public static void atualizarFolha(int idPagamento, folhaPagamento novaFolha) {
         Optional<folhaPagamento> folha = folhaPagamentos.stream()
             .filter(f -> f.getIdPagamento() == idPagamento)
@@ -123,7 +131,7 @@ public final class folhaPagamento {
         }
     }
 
-    // Método DELETE: remover uma folha de pagamento pelo ID
+    // Método DELETE: remove uma folha de pagamento pelo ID
     public static void deletarFolha(int idPagamento) {
         boolean removido = folhaPagamentos.removeIf(f -> f.getIdPagamento() == idPagamento);
         if (removido) {
