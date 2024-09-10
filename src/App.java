@@ -1,5 +1,5 @@
 
-
+//import java.time.LocalDate;
 
 
 public class App {
@@ -57,25 +57,25 @@ public class App {
     // teste da classe folhaPagamento
 
     // Criando folhas de pagamento
-     //   folhaPagamento folha1 = new folhaPagamento(1, 101, LocalDate.now(), 2000.00, "Pago");
-     //   folhaPagamento folha2 = new folhaPagamento(2, 102, LocalDate.now(), 1500.00, "Não Pago");
+       // folhaPagamento folha1 = new folhaPagamento(1, 101, LocalDate.now(), 2000.00, "Pago");
+       // folhaPagamento folha2 = new folhaPagamento(2, 102, LocalDate.now(), 1500.00, "Não Pago");
 
         // Criando as folhas (CREATE)
-     //   folhaPagamento.criarFolha(folha1);
-     //   folhaPagamento.criarFolha(folha2);
+        // folhaPagamento.criarFolha(folha1);
+        // folhaPagamento.criarFolha(folha2);
 
         // Lendo uma folha específica (READ)
-     //    folhaPagamento.lerFolha(1);
+        //  folhaPagamento.lerFolha(1);
 
         // Atualizando uma folha existente (UPDATE)
-     //      folhaPagamento novaFolha = new folhaPagamento(1, 101, LocalDate.now().plusDays(5), 2200.00, "Em Processo");
-       //  folhaPagamento.atualizarFolha(1, novaFolha);
-
+        //  folhaPagamento novaFolha = new folhaPagamento(2, 105, LocalDate.now().plusDays(5), 2500.00, "Em Processo");
+        //  folhaPagamento.atualizarFolha(1, novaFolha);
+ 
         // Listando todas as folhas (READ ALL)
-     //   folhaPagamento.listarFolhas();
+        //  folhaPagamento.listarFolhas();
 
         // Removendo uma folha (DELETE)
-     //   folhaPagamento.deletarFolha(2);
+        //  folhaPagamento.deletarFolha(2);
 
     }
 }
