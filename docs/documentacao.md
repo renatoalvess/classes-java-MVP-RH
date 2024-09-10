@@ -12,8 +12,8 @@
 
 3. Classe - Funcionários
 
-- Propósito:
-- Métodos/Funcionalidades:
+- Propósito: Gerenciamento de dados do funcionários da empresa
+- Métodos/Funcionalidades: Adicionar, buscar, alterar e excluir funcionario.
 
 ## Configuração
 
