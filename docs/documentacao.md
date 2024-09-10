@@ -15,6 +15,12 @@
 - Propósito:
 - Métodos/Funcionalidades:
 
+4. classe - folhaPagamento 
+
+proposito: gerencias os processos de folha de pagamento do sistema.
+metodos/funcionalidades: adicionar, editar, listar e remover uma folha.
+metodos encapsulados para impor restrições
+
 ## Configuração
 
 - Utilizamos o Visual Studio Code para criar a base do projeto.
