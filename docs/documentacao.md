@@ -17,8 +17,8 @@
 
 4. classe - folhaPagamento 
 
-- proposito: gerencias os processos de folha de pagamento do sistema.
-- metodos/funcionalidades: adicionar, editar, listar e remover uma folha. metodos encapsulados para impor restrições
+- Propósito: gerencias os processos de folha de pagamento do sistema.
+- Métodos/Funcionalidades: Adicionar, editar, listar e remover uma folha. Métodos encapsulados para impor restrições.
 
 ## Configuração
 

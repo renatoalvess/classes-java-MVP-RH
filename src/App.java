@@ -1,6 +1,4 @@
-
 //import java.time.LocalDate;
-
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -54,7 +52,7 @@ public class App {
         Cargos.listarCargos();
         } */
 
-    // teste da classe folhaPagamento
+    // Testando a classe folhaPagamento
 
     // Criando folhas de pagamento
        // folhaPagamento folha1 = new folhaPagamento(1, 101, LocalDate.now(), 2000.00, "Pago");
